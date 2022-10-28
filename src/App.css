@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./trovanini.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "Commissioner", Sans-serif;
+  font-size: 68px;
+  line-height: 0.1em;
+  letter-spacing: 2.7px;
+  text-shadow: 1px 0px 2px rgb(0 0 0 / 30%);
+  text-transform: uppercase;
+}
+
+.enter {
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.button {
+  margin: 0 auto;
+  background-color: transparent;
+  color: #ffffff;
+  width: 6rem;
+  border: 1px solid white;
+  padding: 0.5rem 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+canvas {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+audio {
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+
+  visibility: hidden;
+}
+
+@keyframes Cue-In {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotateX(45deg);
+  }
+
+  100% {
+    transform: scale(1) rotateX(0);
+  }
+}
+
+.cue-in {
+  animation: Cue-In 2s ease-in-out;
+}
